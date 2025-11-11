@@ -7,6 +7,10 @@ Amaç sadece hareketi algılamak değil; aynı zamanda bağlamı anlamak:
 “Bu hangi işaret?” ve hemen ardından “Bu işaretten sonra ne gelmeli?” sorularına cevap veren uçtan uca bir mimari.
 
 
+![WhatsApp Görsel 2025-11-11 saat 14 07 31_5566cba0](https://github.com/user-attachments/assets/baa1fbd9-555c-4876-88f5-09dfc08e2132)
+![WhatsApp Görsel 2025-11-11 saat 14 07 32_8455daf2](https://github.com/user-attachments/assets/e1f8fb3f-c787-4749-accd-bce367968204)
+![WhatsApp Görsel 2025-11-11 saat 14 07 33_dee3fa83](https://github.com/user-attachments/assets/acb7973d-13a1-4fd7-a03e-eb2a33cfdcb1)
+
 🔧 Donanım Özeti
 	•	Esnek eldiven üzerine:
 	•	El üstünde 1× 10-DoF IMU
