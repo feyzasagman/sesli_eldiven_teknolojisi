@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alazla</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden;
+            background: #000;
+        }
+
+        .container {
+            height: 100vh;
+            overflow-y: auto;
+            perspective: 1px;
+            -webkit-overflow-scrolling: touch; /* iOS için yumuşak kaydırma */
+        }
+
+        .slide {
+            width: 100%;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Taşan içeriği gizle */
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* cover yerine contain kullanarak resmin tamamının görünmesini sağla */
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100vw; /* Viewport genişliğini aşmasını engelle */
+            max-height: 100vh; /* Viewport yüksekliğini aşmasını engelle */
+        }
+
+        @media screen and (max-width: 768px) {
+            .slide {
+                height: 100dvh; /* Dynamic viewport height - modern tarayıcılar için */
+            }
+
+            .slide img {
+                object-fit: contain; /* Mobilde resmin tamamının görünmesini sağla */
+            }
+
+            .contact-section {
+                width: 90%; /* Mobilde biraz daha geniş alan */
+                padding: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        .contact-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .section-title {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            margin: 1rem 0;
+        }
+
+        .contact-item h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #ccc;
+        }
+
+        .social-media {
+            margin-top: 2rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .social-icon img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .social-icon:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="s">
+            <img src="slides/Slayt1.PNG" alt="Slayt 1">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt2.PNG" alt="Slayt 2">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt3.PNG" alt="Slayt 3">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt4.PNG" alt="Slayt 4">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt5.PNG" alt="Slayt 5">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt6.PNG" alt="Slayt 6">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt7.PNG" alt="Slayt 7">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt8.PNG" alt="Slayt 8">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt9.PNG" alt="Slayt 9">
+           
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt10.PNG" alt="Slayt 10">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt11.PNG" alt="Slayt 11">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt12.PNG" alt="Slayt 12">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt13.PNG" alt="Slayt 13">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt14.PNG" alt="Slayt 14">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt15.PNG" alt="Slayt 15">
+            
+        </div>
+        <div class="slide">
+            <img src="slides/Slayt16.PNG" alt="Slayt 16">
+           
+        </div>
+        
+        <div class="slide">
+            <div class="contact-section">
+                <h2 class="section-title">İletişim</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>E-posta</h3>
+                            <p><a href="mailto:info@alazla.com.tr">info@alazla.com.tr</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" target="_blank">
+                                <img src="assets/instagram.png" alt="Instagram">
+                            </a>
+                            <a href="#" class="social-icon" target="_blank">
+                                <img src="assets/linkedin.png" alt="LinkedIn">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
